@@ -4,7 +4,7 @@
   var observer = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
       mutation.addedNodes.forEach(function(node) {
-        if (node.classList.contains('tv-toast--type_da')) {
+        if (node.className.indexOf('type_da') >= 0) {
           target.removeChild(node);
           console.log('Killed ad "' + node.textContent + '"');
         }
