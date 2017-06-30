@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+
+  "name": "tradingview-notoast",
+  "description": "Kill toast ads on TradingView website",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.tradingview.com/*"],
+      "js": ["myscript.js"]
+    }
+  ]
+}
